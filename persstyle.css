@@ -1,0 +1,213 @@
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: yellow;
+}
+
+::selection {
+  color: white;
+  background: yellow;
+}
+
+
+body{
+  max-width: 1400px;
+  background-color: #2B2A2A;
+  margin: auto;
+ font-family: 'Titillium Web', sans-serif;
+;
+}
+html{
+  box-sizing: border-box
+}
+
+.first{
+  width:100%;
+  height: 600px;
+  background-image: url(https://images.unsplash.com/photo-1596568704261-b2b638599956?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80);
+  background-position:  center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+opacity: 0.5;
+margin-top:0px;
+}
+.bio{opacity: 1;
+  color:#fff;
+  position: relative;
+  max-width: 400px;
+  font-size: 40px;
+  float: right;
+  margin-right: 10%;
+  margin-top: -450px;
+  text-align: center;
+  font-weight: lighter;
+
+}
+.butto{
+  position: relative;
+  margin-right: auto;
+  margin-top: -300px;
+  text-align: center;
+//  font-weight: lighter;
+}
+a{text-decoration: none;}
+.ji{
+  width: 200px;
+  height: 50px;
+  font-size:28px;
+  background:transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color:#fff;
+  font-weight: lighter;
+  outline: none;
+}
+.ji span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.ji span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.ji:hover span {
+  padding-right: 25px;
+  color: yellow;
+}
+
+.ji:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.abou_svg{
+  display: flex;
+  flex-flow: column;
+  margin-top:310px;
+  color: white;
+  font-size: 28px;
+  width: 40%;
+  height: 400px;
+  position: relative;
+  float: left;
+  margin: 5%;
+  text-align: center;
+  min-width: 315px;
+}
+.jab{
+  margin-top: 50px
+}
+.ab{
+border-bottom: solid yellow 2px;
+
+}
+.foto_yell{
+  display: flex;
+  flex-flow: column;
+  margin-top:350px;
+  width: 35%;
+  height: 440px;
+  position: relative;
+  float: right;
+  margin: 5%;
+box-sizing: border-box;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid yellow 2px;
+  border-left: solid yellow 2px;
+  min-width: 315px;
+}
+
+.fa:hover{
+  fill:yellow;
+  color: yellow;
+}
+.fa{
+  color: white;
+  margin: 20px;
+
+}
+
+.fun{
+  background-image: url(https://images.unsplash.com/photo-1531860010134-8264106d78a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 800px;
+  opacity: .5
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1261px) {
+  .butto{
+    margin-top: -200px;
+  }
+
+  .abou_svg{
+    float: none;
+    display: flex;
+   margin-left: auto;
+  margin-top: 200px;
+  width: 600px;
+  margin-right: auto;
+
+  }
+.foto_yell{
+  margin-top: 100px;
+margin-right: auto;
+  float: none;
+  display: flex;
+  margin-left: auto;
+
+}
+.sec{
+  width
+}
+.fun{
+  margin-top: 50px;
+}
+}
+@media all and (max-width: 600px) {
+  .butto{
+  margin-top: 100px
+  }
+  .bio{
+    float: none;
+    margin: auto;
+    margin-top: -500px;
+  }
+  .abou_svg{
+    margin-top: 150px;
+    width: 315px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .foto_yell{
+width: 315px;
+border: none;
+padding: 0px;
+float: none;
+margin-top: 300px;
+margin-left: auto;
+margin-right: auto;
+}
+.foto_yell>img{width: 315px;}
+.fun{
+  margin-top: -100px;
+}
+}
